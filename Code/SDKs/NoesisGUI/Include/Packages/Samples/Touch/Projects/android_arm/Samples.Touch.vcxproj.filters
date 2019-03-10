@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Src">
+      <UniqueIdentifier>{709060d1-a07f-41ae-83cb-2966a5111b8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{fd14ad75-57f1-4a05-8589-d18b9663ff12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{4c9c67aa-5d40-4513-9143-f078321a21a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\armeabi-v7a">
+      <UniqueIdentifier>{e0c020c3-7a7b-46bd-900c-5061359fc386}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\Main.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClInclude Include="pch.h">
+    </ClInclude>
+    <ClCompile Include="pch.cpp">
+    </ClCompile>
+    <ClInclude Include="$(AndroidAPILevelPath)\..\sources\android\native_app_glue\android_native_app_glue.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClCompile Include="$(AndroidAPILevelPath)\..\sources\android\native_app_glue\android_native_app_glue.c">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <CustomBuild Include="..\..\Src\App.xaml">
+      <Filter>Data</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\MainWindow.xaml">
+      <Filter>Data</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\..\..\..\Bin\android_arm\libNoesis.so">
+      <Filter>lib\armeabi-v7a</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Bin\android_arm\libNoesisApp.so">
+      <Filter>lib\armeabi-v7a</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

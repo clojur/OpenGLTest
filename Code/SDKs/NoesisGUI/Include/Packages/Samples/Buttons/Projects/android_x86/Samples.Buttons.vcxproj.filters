@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Src">
+      <UniqueIdentifier>{68e839d0-9d27-43f3-b27a-f21f592f6ad7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{4269eada-d3d0-4418-8bd3-4a4c66861a51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{89fc90a6-8f50-4509-a279-255fa940e832}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\x86">
+      <UniqueIdentifier>{b57fe8dc-563b-4fe2-adb9-8fe371409082}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\App.xaml.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\App.xaml.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Src\DelegateCommand.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\DelegateCommand.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Src\ElementExtensions.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\ElementExtensions.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Src\Main.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\MainWindow.xaml.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\MainWindow.xaml.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Src\ViewModel.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\ViewModel.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+    </ClInclude>
+    <ClCompile Include="pch.cpp">
+    </ClCompile>
+    <ClInclude Include="$(AndroidAPILevelPath)\..\sources\android\native_app_glue\android_native_app_glue.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClCompile Include="$(AndroidAPILevelPath)\..\sources\android\native_app_glue\android_native_app_glue.c">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <CustomBuild Include="..\..\Data\App.xaml">
+      <Filter>Data</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Data\Aero Matics Regular.ttf">
+      <Filter>Data</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Data\ControlResources.xaml">
+      <Filter>Data</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Data\LogoResources.xaml">
+      <Filter>Data</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Data\MainWindow.xaml">
+      <Filter>Data</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\..\..\..\Bin\android_x86\libNoesis.so">
+      <Filter>lib\x86</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Bin\android_x86\libNoesisApp.so">
+      <Filter>lib\x86</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

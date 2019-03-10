@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Src">
+      <UniqueIdentifier>{5034a97c-0053-4863-a06e-90d1002d746f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{8ae7b2cb-b18e-436e-90c5-7d2ce530b16d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{a17a3d91-cde0-4b40-bb51-cd177fe7c8ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\x86">
+      <UniqueIdentifier>{b3c9c826-6ae3-4f25-a14d-e5797ccd34b6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\DateTime.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\DateTime.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Src\Main.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClInclude Include="pch.h">
+    </ClInclude>
+    <ClCompile Include="pch.cpp">
+    </ClCompile>
+    <ClInclude Include="$(AndroidAPILevelPath)\..\sources\android\native_app_glue\android_native_app_glue.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClCompile Include="$(AndroidAPILevelPath)\..\sources\android\native_app_glue\android_native_app_glue.c">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <CustomBuild Include="..\..\Src\MainWindow.xaml">
+      <Filter>Data</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\App.xaml">
+      <Filter>Data</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Aero Matics Regular.ttf">
+      <Filter>Data</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\..\..\..\Bin\android_x86\libNoesis.so">
+      <Filter>lib\x86</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Bin\android_x86\libNoesisApp.so">
+      <Filter>lib\x86</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

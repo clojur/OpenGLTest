@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Samples.ApplicationTutorial", "Samples.ApplicationTutorial.vcxproj", "{107F4F2C-4A21-305B-93E0-44EFB7214BFB}"
+EndProject
+Project("{39E2626F-3545-4960-A6E8-258AD8476CE5}") = "Samples.ApplicationTutorial.apk", "Samples.ApplicationTutorial.apk.androidproj", "{9F878CC2-7AA9-3FDD-B3D1-AA384B514785}"
+EndProject
+Global
+    GlobalSection(SolutionConfigurationPlatforms) = preSolution
+        Debug|ARM = Debug|ARM
+        Profile|ARM = Profile|ARM
+        Release|ARM = Release|ARM
+    EndGlobalSection
+    GlobalSection(ProjectConfigurationPlatforms) = postSolution
+        {107F4F2C-4A21-305B-93E0-44EFB7214BFB}.Debug|ARM.ActiveCfg = Debug|ARM
+        {107F4F2C-4A21-305B-93E0-44EFB7214BFB}.Debug|ARM.Build.0 = Debug|ARM
+        {107F4F2C-4A21-305B-93E0-44EFB7214BFB}.Profile|ARM.ActiveCfg = Profile|ARM
+        {107F4F2C-4A21-305B-93E0-44EFB7214BFB}.Profile|ARM.Build.0 = Profile|ARM
+        {107F4F2C-4A21-305B-93E0-44EFB7214BFB}.Release|ARM.ActiveCfg = Release|ARM
+        {107F4F2C-4A21-305B-93E0-44EFB7214BFB}.Release|ARM.Build.0 = Release|ARM
+        {9F878CC2-7AA9-3FDD-B3D1-AA384B514785}.Debug|ARM.ActiveCfg = Debug|ARM
+        {9F878CC2-7AA9-3FDD-B3D1-AA384B514785}.Debug|ARM.Build.0 = Debug|ARM
+        {9F878CC2-7AA9-3FDD-B3D1-AA384B514785}.Debug|ARM.Deploy.0 = Debug|ARM
+        {9F878CC2-7AA9-3FDD-B3D1-AA384B514785}.Profile|ARM.ActiveCfg = Profile|ARM
+        {9F878CC2-7AA9-3FDD-B3D1-AA384B514785}.Profile|ARM.Build.0 = Profile|ARM
+        {9F878CC2-7AA9-3FDD-B3D1-AA384B514785}.Profile|ARM.Deploy.0 = Profile|ARM
+        {9F878CC2-7AA9-3FDD-B3D1-AA384B514785}.Release|ARM.ActiveCfg = Release|ARM
+        {9F878CC2-7AA9-3FDD-B3D1-AA384B514785}.Release|ARM.Build.0 = Release|ARM
+        {9F878CC2-7AA9-3FDD-B3D1-AA384B514785}.Release|ARM.Deploy.0 = Release|ARM
+    EndGlobalSection
+    GlobalSection(SolutionProperties) = preSolution
+        HideSolutionNode = FALSE
+    EndGlobalSection
+EndGlobal

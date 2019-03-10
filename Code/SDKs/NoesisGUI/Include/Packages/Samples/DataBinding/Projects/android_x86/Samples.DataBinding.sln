@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Samples.DataBinding", "Samples.DataBinding.vcxproj", "{6326D9A3-6F9D-3A8F-8472-507C4FAFF2E2}"
+EndProject
+Project("{39E2626F-3545-4960-A6E8-258AD8476CE5}") = "Samples.DataBinding.apk", "Samples.DataBinding.apk.androidproj", "{997E8C7D-A00F-3DB4-B37A-6A994C9CF7D5}"
+EndProject
+Global
+    GlobalSection(SolutionConfigurationPlatforms) = preSolution
+        Debug|x86 = Debug|x86
+        Profile|x86 = Profile|x86
+        Release|x86 = Release|x86
+    EndGlobalSection
+    GlobalSection(ProjectConfigurationPlatforms) = postSolution
+        {6326D9A3-6F9D-3A8F-8472-507C4FAFF2E2}.Debug|x86.ActiveCfg = Debug|x86
+        {6326D9A3-6F9D-3A8F-8472-507C4FAFF2E2}.Debug|x86.Build.0 = Debug|x86
+        {6326D9A3-6F9D-3A8F-8472-507C4FAFF2E2}.Profile|x86.ActiveCfg = Profile|x86
+        {6326D9A3-6F9D-3A8F-8472-507C4FAFF2E2}.Profile|x86.Build.0 = Profile|x86
+        {6326D9A3-6F9D-3A8F-8472-507C4FAFF2E2}.Release|x86.ActiveCfg = Release|x86
+        {6326D9A3-6F9D-3A8F-8472-507C4FAFF2E2}.Release|x86.Build.0 = Release|x86
+        {997E8C7D-A00F-3DB4-B37A-6A994C9CF7D5}.Debug|x86.ActiveCfg = Debug|x86
+        {997E8C7D-A00F-3DB4-B37A-6A994C9CF7D5}.Debug|x86.Build.0 = Debug|x86
+        {997E8C7D-A00F-3DB4-B37A-6A994C9CF7D5}.Debug|x86.Deploy.0 = Debug|x86
+        {997E8C7D-A00F-3DB4-B37A-6A994C9CF7D5}.Profile|x86.ActiveCfg = Profile|x86
+        {997E8C7D-A00F-3DB4-B37A-6A994C9CF7D5}.Profile|x86.Build.0 = Profile|x86
+        {997E8C7D-A00F-3DB4-B37A-6A994C9CF7D5}.Profile|x86.Deploy.0 = Profile|x86
+        {997E8C7D-A00F-3DB4-B37A-6A994C9CF7D5}.Release|x86.ActiveCfg = Release|x86
+        {997E8C7D-A00F-3DB4-B37A-6A994C9CF7D5}.Release|x86.Build.0 = Release|x86
+        {997E8C7D-A00F-3DB4-B37A-6A994C9CF7D5}.Release|x86.Deploy.0 = Release|x86
+    EndGlobalSection
+    GlobalSection(SolutionProperties) = preSolution
+        HideSolutionNode = FALSE
+    EndGlobalSection
+EndGlobal
