@@ -11,7 +11,7 @@ OpenGL3.3版本
 
 # 效果展示
 
-[image1](https://github.com/clojur/OpenGLTest/blob/master/image/1.png)
+![image1](https://github.com/clojur/OpenGLTest/blob/master/image/1.png)
 
 [image2](https://github.com/clojur/OpenGLTest/blob/master/image/2.png)
 
