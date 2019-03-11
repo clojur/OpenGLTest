@@ -6,17 +6,19 @@ set(SDKDir ../SDks)
 include_directories(${SDKDir})
 
 include_directories(${SDKDir}\\opengl\\include)
-link_directories(${SDKDir}\\opengl\\lib)
+link_directories(${SDKDir}\\opengl\\lib\\${CMAKE_BUILD_TYPE})
 
 include_directories(${SDKDir}\\glew\\include)
-link_directories(${SDKDir}\\glew\\lib)
+link_directories(${SDKDir}\\glew\\lib\\${CMAKE_BUILD_TYPE})
 
-link_directories(${SDKDir}\\soil\\lib)
+link_directories(${SDKDir}\\soil\\lib\\${CMAKE_BUILD_TYPE})
 
 include_directories("${SDKDir}\\NoesisGUI\\include\\Packages\\Render\\GLRenderDevice\\Include")
 include_directories("${SDKDir}\\NoesisGUI\\include\\Packages\\App\\Launcher\\Include")
 include_directories("${SDKDir}\\NoesisGUI\\include")
 link_directories("${SDKDir}\\NoesisGUI\\Lib\\windows_x86")
+
+include_directories("D:/Microsoft\ Visual\ Studio\\2017\\Professional\\VC\\Tools\\MSVC\\14.13.26128\\atlmfc\\include")
 
 set(Common_Heads
     stdafx.h
@@ -72,12 +74,12 @@ if (USE_NoesisGUI_Test)
 endif()
 
 
-#DebugÅäÖÃÏÂÄ¿±êÊä³öÃû´øºó×ºd
+#Debugï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ºd
 if(NOT DEFINED CMAKE_DEBUG_POSTFIX)
     set(CMAKE_DEBUG_POSTFIX "d")
 endif()
 
-#ÉèÖÃÍâ²¿¿â
+#ï¿½ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½
 if("${CMAKE_BUILD_TYPE}" STREQUAL "Debug")
 	set(ExternLib  MyOpenGLd)
 elseif("${CMAKE_BUILD_TYPE}" STREQUAL "Release")
@@ -86,7 +88,8 @@ else()
 	set(ExternLib MyOpenGL)
 endif()
 
-add_executable(${LibName} 
+
+add_executable(${LibName}  WIN32 
     ${Common_Heads}
     ${WinAPP_Files}
     ${Frame_Files}
@@ -95,12 +98,16 @@ add_executable(${LibName}
 	${ResourceFiles}
 )
 
-target_link_libraries(${LibName} ${ExternLib})
+#IF(WIN32)
+#   SET(CMAKE_EXE_LINKER_FLAGS "/SUBSYSTEM:WINDOWS") 
+#ENDIF()
 
-#Ìí¼ÓÁ´½ÓÃüÁî/SAFESEH:NO
-if(WIN32)
-	set_target_properties(${LibName}  
-		PROPERTIES
-		LINK_FLAGS /SUBSYSTEM:WINDOWS
-	)
-endif()
+#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½/SUBSYSTEM:WINDOWS
+#if(WIN32)
+#	set_target_properties(${LibName}  
+#		PROPERTIES
+#		LINK_FLAGS /SUBSYSTEM:WINDOWS
+#	)
+#endif()
+
+target_link_libraries(${LibName} ${ExternLib})

@@ -7,12 +7,12 @@ set(SDKDir "${CMAKE_CURRENT_SOURCE_DIR}/../SDks")
 include_directories(${SDKDir})
 
 include_directories(${SDKDir}\\opengl\\include)
-link_directories(${SDKDir}\\opengl\\lib)
+link_directories(${SDKDir}\\opengl\\lib\\${CMAKE_BUILD_TYPE})
 
 include_directories(${SDKDir}\\glew\\include)
-link_directories(${SDKDir}\\glew\\lib)
+link_directories(${SDKDir}\\glew\\lib\\${CMAKE_BUILD_TYPE})
 
-link_directories(${SDKDir}\\soil\\lib)
+link_directories(${SDKDir}\\soil\\lib\\${CMAKE_BUILD_TYPE})
 
 include_directories("${SDKDir}\\NoesisGUI\\include\\Packages\\Render\\GLRenderDevice\\Include")
 include_directories("${SDKDir}\\NoesisGUI\\include\\Packages\\App\\Launcher\\Include")

@@ -4,7 +4,7 @@ set(SDKDir ${CMAKE_CURRENT_SOURCE_DIR}/../SDks)
 #depend extern library
 macro(DependLibrary libName)
 set(${libName}Include ${SDKDir}/${libName}/include)
-set(${libName}Lib ${SDKDir}/${libName}/lib)
+set(${libName}Lib ${SDKDir}/${libName}/lib/${CMAKE_BUILD_TYPE})
 
 include_directories(${${libName}Include})
 link_directories(${${libName}Lib})
